@@ -17,7 +17,6 @@ const jess = {
 //add event listener function or event handler property here 
 
 let button = document.getElementById('jess'); 
-let button1 = document.getElementById('shadow');
 //button.addEventListener('click', jess.greeting); 
 
 button.addEventListener('click', function(){
