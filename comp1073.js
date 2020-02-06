@@ -22,3 +22,38 @@ let button = document.getElementById('jess');
 button.addEventListener('click', function(){
   jess.bio(); 
 })
+
+let twitchStreamer = {
+
+    //properties
+    name: {
+        first: Zachary,
+        last: Green
+    },
+    program: 'Computer Science',
+    home: 'Innisfil',
+    interest: 'gaming',
+
+    greeting: function(){
+        alert('Hi, I am' + ' ' + twitchStreamer.name.first);
+    },
+
+    display: function() {
+        alert('Name: ' + ' ' + twitchStreamer.name.first + ', ' + twitchStreamer.name.last +
+        ' | ' + 'Program: ' + twitchStreamer.program + ' | ' + 'Place I call home: ' + twitchStreamer.home +
+        ' | ' + 'Interests: ' + twitchStreamer.gaming + '.');
+    }
+
+
+
+}
+
+twitchStreamer.petPeeve = 'sniff uncontrollably';
+
+
+delete twitchStreamer.name.last;
+
+let buttonZPGreeny = document.getElementById("ZPGreeny");
+buttonZPGreeny.addEventListener('click', function() {
+    twitchStreamer.display();
+})
